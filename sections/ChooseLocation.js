@@ -1,10 +1,15 @@
 const bucharest = document.querySelector(".bucharest");
 const timisoara = document.querySelector(".timisoara");
 const oradea = document.querySelector(".oradea");
-const currentCity = document.getElementById("current-city");
+
+function updateCityDisplay(city) {
+  const currentCity = document.getElementById("current-city");
+  currentCity.innerHTML = city + ".";
+}
 
 const updateCity = (city) => {
-  currentCity.innerHTML = city;
+  updateCityDisplay(city);
+  localStorage.setItem("city", city);
   displayCurrentWeather(city);
 };
 
