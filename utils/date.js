@@ -2,7 +2,7 @@ function getDayOfWeek(utc) {
   const date = new Date(utc * 1000);
   const dayWeek = date.getDay();
   const month = date.toLocaleString("default", { month: "short" });
-  const dayMonth = date.getDay();
+  const dayMonth = date.getDate();
 
   let day;
 

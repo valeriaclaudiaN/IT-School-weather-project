@@ -56,3 +56,7 @@ main {
 header {
   height: 30vh;
 }
+
+.weather-forecast-box > * {
+  flex: 1;
+}

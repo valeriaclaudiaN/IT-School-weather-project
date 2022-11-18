@@ -11,6 +11,7 @@ const updateCity = (city) => {
   updateCityDisplay(city);
   localStorage.setItem("city", city);
   displayCurrentWeather(city);
+  displayWeatherForecast(city);
 };
 
 bucharest.addEventListener("click", function () {
