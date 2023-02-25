@@ -1,4 +1,4 @@
-# IT-School-weather-project
+# Weather-project
 
 Simple 6-day weather forecast application using https://openweathermap.org/api API.
 
